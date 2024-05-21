@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "C@rrombo@rd2",
+    "database": "maanytm",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "C@rrombo@rd2",
+    "database": "maanytm",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "C@rrombo@rd2",
+    "database": "maanytm",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

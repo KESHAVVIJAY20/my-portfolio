@@ -16,24 +16,47 @@ head
 
   script.
       document.addEventListener('DOMContentLoaded', function() {
-        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        //- var myModal = new bootstrap.Modal(document.getElementById('myModal'));
         //- var showMessageJS = !{JSON.stringify(showMessage)};
         //- console.log(#{showMessage});
         if(#{showMessage}){
-          myModal.show();
+          //- mycontact.show();
         }
       });
+      document.addEventListener('DOMContentLoaded', function() {
+        var mycontact = new bootstrap.Modal(document.getElementById('mycontact'));
+        mycontact.show();
+      });
 body
-  .modal#myModal(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+
+  .modal#mycontact(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
       .modal-dialog
         .modal-content
           .modal-header
-            h5.modal-title#exampleModalLabel hello #{username}
+            h5.modal-title#exampleModalLabel Need a freelance ?
             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
               span(aria-hidden='true')
           .modal-body
             p(style=`text-align: center;font-family: 'Poetsen One'; font-size: larger; color : ${alertColor}`)
               | #{alertMessage}
+            if alertColor != 'green' 
+              form.contact-form1.p-5(action='/contact' method='post')
+                label.form-label1(for='name') Name
+                br
+                input#name.input-box1(type='text' name="username" placeholder='Enter your name' value=username required)
+                br
+                label.form-label1(for='Email') Email
+                br
+                input#email.input-box1(type='mail'  name ="usermail" placeholder='Enter your Email' value=usermail required)
+                br
+                label.form-label1(for='message') Message
+                br
+                input#message.input-box1(style='padding-bottom: 100px;' type='text' name ="message" value=message  placeholder='Enter your Message ' required)
+                br
+                br
+                input#submit1.btn.bg-primary.text-white(type='submit' name='SUBMIT')
+                br
+                br    
           .modal-footer
             button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
 

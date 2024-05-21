@@ -26,12 +26,6 @@ exports.contact = (req, res) => {
         usermail,
         message
     } = req.body;
-
-    // Process the form data (you can perform validation, save to a database, etc.)
-    console.log("Received form data:");
-    console.log("Name:", username);
-    console.log("Email:", usermail);
-    console.log("Message:", message);
     let alertMessage = "Thanks for reaching out! we will be in touch shortly";
     let alertColor = 'green';
     if (!isValidEmail(usermail)) {
