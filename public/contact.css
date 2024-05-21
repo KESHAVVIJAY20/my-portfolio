@@ -1,0 +1,30 @@
+.contact-form{
+    background-color: rgba(199, 191, 191, 0.401);
+    display: block;
+    margin: auto;
+    width: 900px;
+    border-radius: 20px;
+}
+.form-label{
+    margin-bottom: 5px;
+}
+.input-box{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius:  0px 10px 0px 10px;
+    padding: 20px;
+}
+#submit{
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+.social{
+    text-align: end;
+}
+#contact{
+    padding-top: 7%;
+}

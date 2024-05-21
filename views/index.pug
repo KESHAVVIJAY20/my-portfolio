@@ -1,0 +1,186 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Keshav Vj
+  link(rel='icon' href='title-img-removebg-preview.png')
+  link(rel='stylesheet' href='styles.css')
+  link(rel='stylesheet' href='about.css')
+  link(rel='stylesheet' href='projects.css')
+  link(rel='stylesheet' href='contact.css')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+
+  script.
+      document.addEventListener('DOMContentLoaded', function() {
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        //- var showMessageJS = !{JSON.stringify(showMessage)};
+        //- console.log(#{showMessage});
+        if(#{showMessage}){
+          myModal.show();
+        }
+      });
+body
+  .modal#myModal(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5.modal-title#exampleModalLabel hello #{username}
+            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true')
+          .modal-body
+            p(style=`text-align: center;font-family: 'Poetsen One'; font-size: larger; color : ${alertColor}`)
+              | #{alertMessage}
+          .modal-footer
+            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+
+  
+  header.heading.container-fluid.ps-0.pe-0
+    .image
+      img.person(src='img1 (1).gif' alt='image')
+    .navbars.mt-4.pt-2
+      ul
+        b
+          li.nav-menu.btn
+            a(href='./#HOME') HOME
+        b
+          li.nav-menu.btn
+            a(href='./#about') ABOUT
+        b
+          li.nav-menu.btn
+            a(href='./#project') PROJECTS 
+        b
+          li.nav-menu.btn
+            a(href='./#contact') CONTACT
+  main#HOME.main
+    // rgb(85, 77, 77)
+    // this section is for middle text
+    section.section1
+      div(style='display: inline-flex;')
+        b
+          h1#hello-text(style='font-size: 60px; color: rgb(15, 47, 32) ;-webkit-text-stroke: 2px rgb(0, 0, 0); ') HEY, I&apos;M #{user}
+        img(src='title-img-removebg-preview.png' style='width: 550px; height: 450px; margin-top: -20%;position: absolute; margin-left: 70%;' alt='')
+      br
+      h6(style='font-family: var(--font);width: 100%; max-width: 600px;text-align: center;color: rgb(24, 19, 19);')
+        | A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product
+      br
+      br
+      a(href='./#project')
+        button.btn.bg-primary.text-white PROJECTS
+    section.social-connect
+      ul
+        li.icons
+          a(href='https://www.linkedin.com/in/keshav-vijay-352062221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ')
+            img(src='svg/linkedin.svg' alt='icons')
+        //- li.icons
+        //-   a(href='#')
+        //-     img(src='svg/twitter.svg' alt='icons')
+        li.icons
+          a(href='https://www.youtube.com/channel/UCMsSrolob6JpHdSs4WKsHdA#')
+            img(src='svg/youtube.svg' alt='icons')
+        li.icons
+          a(href='https://github.com/KESHAVVIJAY20')
+            img(src='svg/git.svg' alt='icons')
+        li.icons
+          a(href='https://www.instagram.com/keshavvj_20/#')
+            img(src='svg/instagram.svg' alt='icons')
+    img.chat(src='svg/chat.svg' alt='')
+    img.chat1(src='svg/pencil.svg' alt='')
+  section#about
+    about
+      .about
+        h1.about-heading ABOUT ME
+        br
+        br
+        h6.heading-para(style='font-family: var(--font);width: 100%;text-align: center;')
+          | Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
+        br
+        br
+        br
+        .about-main.row.ps-5
+          .getToKnow.col
+            h1(style="font-family: 'Poetsen One';") Get To Know me!
+            br
+            br
+            p(style='font-family: var(--font);color: rgb(91, 89, 89);')
+              | I&apos;m a 
+              strong Frontend Focused Web Developer
+              |  building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the 
+              strong Projects
+              |  section. 
+              br
+              br
+              |                     I also like sharing content related to the stuff that I have learned over the years in 
+              strong Web Development
+              |  so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming 
+              br
+              br
+              |                     I&apos;m open to 
+              strong Job
+              |  opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to 
+              strong contact
+              |  me.
+            button.btn.bg-primary.text-white.ps-5.pe-5.pt-3.pb-3 CONTACT
+          .MySkills.col
+            h1(style="font-family: 'Poetsen One';") My Skills
+            br
+            br
+
+            each skill in skills 
+              h4.btn.ms-2(style='background-color: rgba(218, 213, 213, 0.688);color: rgb(136, 136, 135);')
+                strong #{skill}          
+        br
+        br
+        br
+        br
+
+  contact#contact.container-fluid
+    h1(style="text-align: center;font-family: 'Poetsen One';") CONTACT
+    br
+    p(style="text-align: center;font-family: 'Poetsen One'; font-size: larger;")
+      | Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+    if showMessage  
+      p(style=`text-align: center;font-family: 'Poetsen One'; font-size: larger; color : ${alertColor}`)
+        | #{alertMessage}
+  form.contact-form.p-5(action='/contact' method='post')
+      label.form-label(for='name') Name
+      br
+      input#name.input-box(type='text' name="username" placeholder='Enter your name' value=username required)
+      br
+      label.form-label(for='Email') Email
+      br
+      input#email.input-box(type='mail'  name ="usermail" placeholder='Enter your Email' value=usermail required)
+      br
+      label.form-label(for='message') Message
+      br
+      input#message.input-box(style='padding-bottom: 200px;' type='text' name ="message" value=message  placeholder='Enter your Message ' required)
+      br
+      br
+      input#submit.btn.bg-primary.text-white(type='submit' name='SUBMIT')
+      br
+      br    
+  footer.container-fluid.bg-dark.pt-4
+    .container.row.pb-5
+      .col
+        h1(style='color: white;') #{user}
+        br
+        p(style='color: white;')
+          | A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+      .social.col
+        h1(style='color: white;') SOCIAL
+        a(href='https://www.linkedin.com/in/keshav-vijay-352062221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ')
+          img(src='footerSvg/linkedin.svg' alt='linkedin')
+        a(href='https://github.com/KESHAVVIJAY20')
+          img(src='footerSvg/git.svg' class='social-icons ms-2' alt='github')
+        //- a(href='#')
+        //-   img(src='footerSvg/twitter.svg' alt='twitter')
+        a(href='#')
+          img(src='footerSvg/youtube.svg' class='social-icons ms-2' alt='youtube')
+        a(href='https://www.instagram.com/keshavvj_20/#')
+          img(src='footerSvg/instagram.svg' class='social-icons ms-2' alt='instagram')
+    hr(style='color: white;')
+    p(style='color: white;text-align: center;padding-bottom: 3%;') &copy; Copyright 2024 . Made by Keshav Vijayvergiya
+  script(src='script.js')

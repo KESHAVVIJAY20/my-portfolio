@@ -1,0 +1,121 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+.heading{
+    display: inline-flex;
+    }
+    header{
+        position: fixed;
+        background-color: white;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+.person{
+    width: 150px;
+    height: 100px;
+    padding: 2px;
+    /* margin-top: -30px; */
+    margin-left: 45px;
+}
+.image{
+    display: inline-flex;
+    margin-right: 35%;
+    width: 20%;
+}
+
+.navbars{
+    align-items: end;
+    width: 80%;
+    ul{
+        display: inline-flex;
+    }
+    li{
+        list-style-type: none;
+        font:bolder;
+        font-size: 1rem;
+        margin-right: 3.4rem;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        :hover{
+            text-shadow: 2px 2px 4px #9a9090;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.nav-menu{
+    color: rgb(0, 0, 0);
+}
+
+.main{
+    background: url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);
+    /* background: url(svg/jigsaw.svg); */
+    height: 105vh;
+}
+
+.section1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    /* backdrop-filter: blur(8px); */
+    .btn{
+        margin-left: 40%;
+        padding: 2% 7% 2% 7%;
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+.social-connect{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    /* padding-right:20px ; */
+    padding: 20px;
+    position: relative;
+    top: 25%;
+    ul{
+        padding: 0%;
+    }
+    li{
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+}
+.chat{
+    position: absolute;
+    left: 91%;
+    top: 85%;
+    background-color: rgb(175, 187, 233);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    cursor: pointer;
+}
+.chat1{
+    position: absolute;
+    left: 91%;
+    top: 85%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+    transition: all .3s ease-in;
+    position: fixed;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.unhide{
+    display: block;
+}
+
+/* For mobile phones: */
+/* @media only screen and (max-width:500px) {
+    .heading, .main, .about, #contact, #project {
+      width: 100%;
+    }
+  } */

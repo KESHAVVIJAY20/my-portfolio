@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --font: "PT Serif", serif;
+}
+
+.about{
+    background-color: rgba(227, 221, 221, 0.314);
+}
+.about-heading{
+    margin-top: 10%;
+    text-align: center;
+    font-family: "Poetsen One";
+    padding-top: 10%;
+}
+
+.heading-para{
+    text-align: center;
+    font-family: var(--font);
+}
+.about-main{
+    max-width: 90vw;
+    .MySkills{
+        float: left;
+    }
+}
+
