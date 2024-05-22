@@ -11,3 +11,6 @@ let chat1 = document.querySelector('.chat1');
 chat.addEventListener('click',function(){
     window.open('https://api.whatsapp.com/send/?phone=+919352515020&text=Hi&type=phone_number','_blank');
 })
+
+
+

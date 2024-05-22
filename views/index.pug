@@ -15,17 +15,18 @@ head
   script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
 
   script.
-      document.addEventListener('DOMContentLoaded', function() {
+      //- document.addEventListener('DOMContentLoaded', function() {
         //- var myModal = new bootstrap.Modal(document.getElementById('myModal'));
         //- var showMessageJS = !{JSON.stringify(showMessage)};
         //- console.log(#{showMessage});
-        if(#{showMessage}){
+        //- if(#{showMessage}){
           //- mycontact.show();
-        }
-      });
+      //-   }
+      //- });
       document.addEventListener('DOMContentLoaded', function() {
         var mycontact = new bootstrap.Modal(document.getElementById('mycontact'));
-        mycontact.show();
+        var title = document.querySelector('#exampleModalLabel');
+        mycontact.show();  
       });
 body
 
@@ -33,7 +34,8 @@ body
       .modal-dialog
         .modal-content
           .modal-header
-            h5.modal-title#exampleModalLabel Need a freelance ?
+            if alertColor != 'green'
+              h5.modal-title#exampleModalLabel Need a freelancer ? 
             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
               span(aria-hidden='true')
           .modal-body
