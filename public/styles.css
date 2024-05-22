@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
     position: fixed;
     cursor: pointer;
 }
-.chat1{
+/* .chat1{
     position: absolute;
     left: 91%;
     top: 85%;
@@ -105,7 +105,7 @@ body::-webkit-scrollbar {
     transition: all .3s ease-in;
     position: fixed;
     cursor: pointer;
-}
+} */
 .hide{
     display: none;
 }
@@ -114,8 +114,87 @@ body::-webkit-scrollbar {
 }
 
 /* For mobile phones: */
-/* @media only screen and (max-width:500px) {
-    .heading, .main, .about, #contact, #project {
-      width: 100%;
+@media only screen and (max-width:430px) and (max-height:932px) {
+    .modal{
+        margin-top: 10%;
     }
-  } */
+    .image{
+        margin-right: 0%;
+    }
+    .heading{
+        /* display: flex; */
+        max-width: 430px;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: 1000;
+        overflow-y: hidden;
+    }
+    .navbars{
+        width: 100%;
+        max-width: 430px;
+        li{
+            margin-right: 1rem;
+        }
+    }
+    .section1{
+        width: 60vw;
+        margin-top: -40%;
+    }
+    .myImage{
+        /* position: absolute; */
+        left: -110%;
+        top:87%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .social-connect{
+        top: 30%;
+    }
+    .main{
+        width: 100%;
+    }
+    #hello-text{
+        margin-top: -25%;
+        overflow: hidden;
+        font-size: 20px;
+    }
+    .home-text{
+        margin-top: 0%;
+        width: 100%;
+        margin-left: -30px;
+        min-width: 350px;
+        /* float: left; */
+        font-size: 1.5rem;
+        text-align: left;
+        justify-content: start;
+    }
+    .section1 .btn{
+        margin-left: -20%;
+        margin-top: 6%;
+        width: 150px;
+        display: none;
+    }
+    .chat{
+        left: 75%;
+        top: 85%;
+        position: fixed;
+        z-index: 1000;
+        /* background-attachment: fixed; */
+        /* overflow-y: auto; */
+    }
+    .about{
+        width: 100%;
+        max-width: 430px;
+    }
+    #contact-btn{
+        margin-bottom: 10%;
+    }
+    .contact-form{
+        width: 100%;
+        max-width: 430px;
+    }
+    footer{
+        width: 100%;
+        max-width: 430px;
+    }
+  }

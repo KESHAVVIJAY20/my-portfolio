@@ -84,17 +84,17 @@ body
     // rgb(85, 77, 77)
     // this section is for middle text
     section.section1
-      div(style='display: inline-flex;')
+      div(style='display:flex;' class='home-layout')
         b
           h1#hello-text(style='font-size: 60px; color: rgb(15, 47, 32) ;-webkit-text-stroke: 2px rgb(0, 0, 0); ') HEY, I&apos;M #{user}
-        img(src='title-img-removebg-preview.png' style='width: 550px; height: 450px; margin-top: -20%;position: absolute; margin-left: 70%;' alt='')
+        img(src='title-img-removebg-preview.png' class='myImage' style='width: 550px; height: 450px; margin-top: -20%;position: absolute; margin-left: 70%;' alt='')
       br
-      h6(style='font-family: var(--font);width: 100%; max-width: 600px;text-align: center;color: rgb(24, 19, 19);')
+      h6(class="home-text" style='font-family: var(--font);width: 100%; max-width: 600px;text-align: center;color: rgb(24, 19, 19);')
         | A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product
       br
       br
       a(href='./#project')
-        button.btn.bg-primary.text-white PROJECTS
+        button.project-btn.btn.bg-primary.text-white PROJECTS
     section.social-connect
       ul
         li.icons
@@ -113,7 +113,7 @@ body
           a(href='https://www.instagram.com/keshavvj_20/#')
             img(src='svg/instagram.svg' alt='icons')
     img.chat(src='svg/chat.svg' alt='')
-    img.chat1(src='svg/pencil.svg' alt='')
+    //- img.chat1(src='svg/pencil.svg' alt='')
   section#about
     about
       .about
@@ -148,7 +148,7 @@ body
               |  opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to 
               strong contact
               |  me.
-            button.btn.bg-primary.text-white.ps-5.pe-5.pt-3.pb-3 CONTACT
+            button#contact-btn.btn.bg-primary.text-white.ps-5.pe-5.pt-3.pb-3 CONTACT
           .MySkills.col
             h1(style="font-family: 'Poetsen One';") My Skills
             br
